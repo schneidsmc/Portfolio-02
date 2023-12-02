@@ -6,52 +6,65 @@
     <link rel="stylesheet" href="./assets/style.css"/>
     <title>Megan Schneider</title>
 </head>
+
 <body>
 <!-- This is the Header topleft -->
-    <header>
+    <header class="main-header">
         <h1>Megan Schneider</h1>
 <!-- This is the nav bar topright -->
         <nav>
             <ul>
-                <li>About Me</li>
-                <li>Work</li>
-                <li>Contact Me</li>
-                <li>Resume</li>
+                <li><a href="#About-me"></a>About Me</a></li>
+                <li><a href="Work"></a>Work</a></li>
+                <li> <a href="#contact-me"></a>Contact Me</a></li>
+                <li><a href="#resume"></a>Resume</a></li>
             </ul>
         </nav>
-<!-- This is the header image and profile image -->
-    <div></div>
-    <h2>Cool Subtitle</h2>
-    <div></div>
     </header>
+<!-- This is the header image and profile image -->
+        <div>
+            <img src= "assets/header-mountains.jpeg"alt="mountains"/>
+        </div>
+    
+        <div></div>
 <!-- This is the main body with links from nav bar -->
     <main>
-        <section>
             <!-- ABOUT ME SECTION -->
-            <h3>About Me</h3>
-            <p>This is the paragraph about me.</p>
-            <!-- WORK SECTION -->
-            <h3>Work</h3>
-                <p>Project link</p>
-                <p>Project link</p>
-                <p>Project link</p>
-                <p>Project link</p>
-                <p>Project link</p>
+        <section id="#About-me">
+            <h3 class="column left">About Me</h3>
+                <p>This is the paragraph about me.</p>
+        </section>
+
+             <!-- WORK SECTION -->
+        <section id="Work">
+            <h3 class="column left">Work</h3>
+                <card class="card">
+                    <img src= "assets/Zoe.jpeg"alt="Zoe"/>
+                    <p>This is project Zoe!</p>
+                </card>
+                <card class="card">
+                    <img src= "assets/Oxford.jpeg"alt="Oxford"/>
+                    <p>This is project Oxford!</p>
+                </card>
+                <card class="card">
+                    <img src= "assets/Louie.jpeg"alt="Louie"/>
+                    <p>This is project Louie!</p>
+                </card>
+        </section>
             <!-- CONTACT ME SECTION -->
-            <h3>Contact Me</h3>
-                <ul>
+        <section id="contact-me">
+            <h3 class="column left">Contact Me</h3>
+                <ul class="contact-me">
                     <li>Email: schneidsmc@gmail.com</li>
                     <li>Phone #: 867-5309</li>
                     <li>Git Hub Profile</li>
                 </ul>
-            <!-- RESUME LINK -->
-            <h3>Resume</h3>
-                <p>Link to resume</p>
         </section>
+    
     </main>
 <!-- FOOTER -->
     <Footer>
-        <h3>Made by me</h3>
+        <h6>Made by me</h6>
     </Footer>
     
 </body>
