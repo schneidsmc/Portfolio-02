@@ -25,14 +25,6 @@ header{
     display:flex;
     width: 100%;
     background-color: var(--jet);
-}
-
-main{
-    display: block;
-    flex-wrap: nowrap;
-}
-
-header nav{
     padding: 15px;
 }
 
@@ -44,10 +36,18 @@ header nav ul li{
     text-decoration:underline;
     text-underline-offset: 10px;
 }
+
+main{
+    display: block;
+    flex-wrap: nowrap;
+}
+
 section{
     width: 90%;
     display: flex;
     margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 h1{
@@ -63,16 +63,13 @@ h3{
     text-align: end;
     flex-wrap: wrap;
     font-size: 60px;
+    margin: 5px;
 }
 
 p{
     color: var(--delft);
     font-size: small;
     padding: 10px;
-}
-section{
-    display: flex;
-    flex-wrap: wrap;
 }
 
 section ul li{
@@ -83,17 +80,20 @@ section ul li{
         text-decoration:underline;
         text-underline-offset: 10px;
         align-items: center;
+        flex-wrap: wrap;
 }
+
+img{
+    width: 100%;
+    max-width: 1000px;
+}
+
 div img{
     margin: 0;
     padding: 0;
     width: 100%;
     object-fit: cover;
     flex: 2 1 200px;
-}
-img{
-    width: 100%;
-    max-width: 1000px;
 }
 
 /* These are the classes */
