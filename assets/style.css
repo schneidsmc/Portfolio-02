@@ -48,31 +48,19 @@ h1{
     margin-bottom: 10px;
 }
 
-div{
-    width: 100%
-}
-
-img{
+div img{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
     object-fit: cover;
     flex: 2 1 200px;
 }
 
 main{
-    /* display: block; */
     flex-wrap: nowrap;
 }
-
-/* section{
-    width: 90%;
-    margin: 60px auto;
-    display: flex;
-    flex-wrap: wrap;
-} */
 
 section{
     display: flex;
@@ -122,34 +110,43 @@ section ul li{
     width: 75%;
   }
 
+
+
 #grid-area-work{
     grid-area: 1 / 1 / 4 / 2;
     padding: 10px;
 }
-#grid-area-Zoe{
+#grid-area-sky{
     grid-area: 2 / 2 / 1 / 4
 }
-#grid-area-Oxford{
-    grid-area: 2 / 2 / 2 / 2
+#grid-area-spring{
+    grid-area: 2 / 2 / 2 / 2;
 }
-#grid-area-Louie{
-    grid-area: 2 / 3 / 2 / 3
+#grid-area-summer{
+    grid-area: 2 / 3 / 2 / 3;
 }
-#grid-area-Zia{
+#grid-area-winter{
     grid-area: 3 / 2 / 3 / 2
 }
-#grid-area-Aoife{
+#grid-area-autumn{
     grid-area: 3 / 3 / 3 / 3
 }
+
 .grid-container{
     width: 100%;
+    height: 60%;
     margin: 60px auto;
     display: grid;
     grid-template-columns: 25% 5fr 5fr;
-    grid-template-rows: 25% 36% 35%;
-    /* flex-wrap: wrap; */
+    grid-template-rows: 25% 17% 17%;
 }
+
+
 .grid-card-properties{
+    display: flex;
+    flex: 1;
+    position: relative;
+    flex-direction:column;
     border-style: solid;
     border-width: 5px;
     border-color: var(--LightG);
@@ -157,9 +154,41 @@ section ul li{
     margin: 20px;
 }
 
+
+.top-work-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 25%;
+    text-align: start;
+    top: 200px;
+    left: 0px;
+    right: 0px;
+    padding: 15px;
+    color: var(--delft);
+    background-color: var(--LightG);
+    font-size: 30px;
+}
+
+.work-box{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    text-align: start;
+    top: 55px;
+    left: 0px;
+    right: 0px;
+    padding: 5px;
+    color: var(--delft);
+    background-color: var(--LightG);
+    font-size: 30px;
+    max-height: 17fr;
+}
+
 .grid-item{
     position: relative;
-    overflow: hidden;
+    overflow:hidden;
 }
 
 .grid-item img{
@@ -167,6 +196,7 @@ section ul li{
     height: auto;
     display:block;
 }
+
 .contact-me{
     display: flex;
     flex-wrap: wrap;
