@@ -19,41 +19,65 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: var(--delft);
     background-color: var(--Dull);
+    width: 100%;
 }
 
 header{
     display:flex;
+    justify-content: space-between;
     width: 100%;
     background-color: var(--jet);
-    padding: 15px;
 }
 
 header nav ul li{
     display: inline-flex;
-    margin-left: 25px;
+    margin-left: 5px;
     font-size: 20px;
     color:var(--Uranian);
     text-decoration:underline;
     text-underline-offset: 10px;
+    padding: 10px;
 }
-
-main{
-    display: block;
-    flex-wrap: nowrap;
-}
-
-section{
-    width: 90%;
-    display: flex;
-    margin: 60px auto;
-    display: flex;
-    flex-wrap: wrap;
-}
-
 h1{
     background-color: var(--Uranian);
     color:var(--delft);
+    padding-left: 100px;
+    padding-right: 10px;
+    background-size: fill;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
+
+div{
+    width: 100%
+}
+
+img{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    flex: 2 1 200px;
+}
+
+main{
+    /* display: block; */
+    flex-wrap: nowrap;
+}
+
+/* section{
+    width: 90%;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+section{
+    display: flex;
+}
+
 h3{
     border-style: solid;
     border-width: 5px;
@@ -61,9 +85,8 @@ h3{
     border-bottom: 0;
     border-top: 0;
     text-align: end;
-    flex-wrap: wrap;
     font-size: 60px;
-    margin: 5px;
+    margin: 0px;
 }
 
 p{
@@ -83,27 +106,8 @@ section ul li{
         flex-wrap: wrap;
 }
 
-img{
-    width: 100%;
-    max-width: 1000px;
-}
-
-div img{
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    object-fit: cover;
-    flex: 2 1 200px;
-}
 
 /* These are the classes */
-
-.main-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-
-}
 
 
 .column {
@@ -118,10 +122,34 @@ div img{
     width: 75%;
   }
 
-.card{
-    display: block;
-    flex-wrap: wrap;
-    flex: 2 1 200px;
+#grid-area-work{
+    grid-area: 1 / 1 / 4 / 2;
+    padding: 10px;
+}
+#grid-area-Zoe{
+    grid-area: 2 / 2 / 1 / 4
+}
+#grid-area-Oxford{
+    grid-area: 2 / 2 / 2 / 2
+}
+#grid-area-Louie{
+    grid-area: 2 / 3 / 2 / 3
+}
+#grid-area-Zia{
+    grid-area: 3 / 2 / 3 / 2
+}
+#grid-area-Aoife{
+    grid-area: 3 / 3 / 3 / 3
+}
+.grid-container{
+    width: 100%;
+    margin: 60px auto;
+    display: grid;
+    grid-template-columns: 25% 5fr 5fr;
+    grid-template-rows: 25% 36% 35%;
+    /* flex-wrap: wrap; */
+}
+.grid-card-properties{
     border-style: solid;
     border-width: 5px;
     border-color: var(--LightG);
@@ -129,6 +157,16 @@ div img{
     margin: 20px;
 }
 
+.grid-item{
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-item img{
+    width: 100%;
+    height: auto;
+    display:block;
+}
 .contact-me{
     display: flex;
     flex-wrap: wrap;
