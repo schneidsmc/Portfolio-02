@@ -169,7 +169,6 @@ footer h5{
     grid-template-rows: 25% 17% 17%;
 }
 
-
 .grid-card-properties{
     display: flex;
     flex: 1;
@@ -179,9 +178,16 @@ footer h5{
     border-width: 5px;
     border-color: var(--LightG);
     background-color: var(--Rosy);
+    color:var(--delft);
     margin: 20px;
 }
 
+/* .grid-card-properties:hover {
+    border-color: var(--mint);
+    background-color: var(--BrightTiffany);
+    color: var(--jet);
+    cursor: pointer;
+} */
 
 .top-work-box{
     position: absolute;
@@ -219,10 +225,19 @@ footer h5{
     overflow:hidden;
 }
 
+
 .grid-item img{
     width: 100%;
     height: auto;
     display:block;
+    opacity: 50%;
+}
+
+.grid-item img:hover {
+    opacity: 100%;
+    background-color:var(--Rosy);
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
 }
 
 .contact-me{
