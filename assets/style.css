@@ -20,6 +20,7 @@ body{
     color: var(--delft);
     background-color: var(--Dull);
     width: 100%;
+    padding-bottom: 50px;
 }
 
 header{
@@ -36,15 +37,15 @@ header nav ul li{
 header nav ul li a {
     margin-left: 5px;
     font-size: 20px;
-    color:var(--Uranian);
+    color: var(--mint);
     text-decoration:underline;
     text-underline-offset: 10px;
     padding: 10px;
-    padding-top: 25px;
+    padding-top: 45px;
 }
 
 h1{
-    background-color: var(--Uranian);
+    background-color: var(--Dull);
     color:var(--delft);
     padding-left: 100px;
     padding-right: 10px;
@@ -53,6 +54,10 @@ h1{
     background-size: fill;
     margin-top: 15px;
     margin-bottom: 15px;
+    font-size: 60px;
+    border: var(--mint);
+    border-style: dashed;
+    border-left: 0px;
 }
 div{
     position:relative;
@@ -61,7 +66,7 @@ div img{
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 250px;
+    height: 370px;
     display: block;
     object-fit: cover;
     flex: 2 1 200px;
@@ -70,7 +75,10 @@ div img{
     position: absolute;
     bottom: 0;
     right: 0;
-    background-color: var(--Uranian);
+    background-color: var(--Dull);
+    border-style: dashed;
+    border-color: var(--mint);
+    border-right: 0px;
     color:var(--delft);
     padding-right: 55px;
     padding-left: 10px;
@@ -96,7 +104,7 @@ h3{
     border-bottom: 0;
     border-top: 0;
     text-align: end;
-    font-size: 60px;
+    font-size: 50px;
     margin: 0px;
 }
 
@@ -117,13 +125,7 @@ section ul li{
         flex-wrap: wrap;
 }
 
-footer h5{
-    padding: 35px;
-    margin: 10px;
-    align-items: center;
-}
-
-/* These are the classes */
+/* These are the classes and ids */
 
 
 .column {
@@ -161,33 +163,25 @@ footer h5{
 }
 
 .grid-container{
-    width: 100%;
-    height: 60%;
-    margin: 60px auto;
     display: grid;
-    grid-template-columns: 25% 5fr 5fr;
-    grid-template-rows: 25% 17% 17%;
+    width: 100%;
+    height: 55%;
+    margin: 60px auto;
+    grid-template: 25% 15% 15% / 25% 5fr 5fr;
 }
 
 .grid-card-properties{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     position: relative;
     flex-direction:column;
     border-style: solid;
     border-width: 5px;
-    border-color: var(--LightG);
+    border-color: var(--mint);
     background-color: var(--Rosy);
     color:var(--delft);
     margin: 20px;
 }
-
-/* .grid-card-properties:hover {
-    border-color: var(--mint);
-    background-color: var(--BrightTiffany);
-    color: var(--jet);
-    cursor: pointer;
-} */
 
 .top-work-box{
     position: absolute;
@@ -195,12 +189,10 @@ footer h5{
     flex-direction: column;
     max-width: 25%;
     text-align: start;
-    top: 200px;
-    left: 0px;
-    right: 0px;
+    top: 100px;
     padding: 15px;
     color: var(--delft);
-    background-color: var(--LightG);
+    background-color: var(--mint);
     font-size: 30px;
 }
 
@@ -211,13 +203,10 @@ footer h5{
     max-width: 40%;
     text-align: start;
     top: 55px;
-    left: 0px;
-    right: 0px;
     padding: 5px;
     color: var(--delft);
-    background-color: var(--LightG);
+    background-color: var(--mint);
     font-size: 30px;
-    max-height: 17fr;
 }
 
 .grid-item{
@@ -240,15 +229,18 @@ footer h5{
     transition: ease-in-out 0.5s;
 }
 
-.contact-me{
+.contact-me {
     display: flex;
     flex-wrap: wrap;
     margin-left: 10px;
     margin-bottom: 15px;
+    padding: 10px;
     font-size: 20px;
     color:var(--delft);
     text-decoration:underline;
     text-underline-offset: 10px;
 }
 
-
+.contact-me a{
+    color:var(--delft);
+}
