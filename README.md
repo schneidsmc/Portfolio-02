@@ -25,9 +25,10 @@
             THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Description
-- Header with name, photo and links to the information needed to contact.
+- Header with name, photo and links to the information needed to contact. The profile image has CSS property sticky and flows with the scroll. 
 - Navigation bar links lead to the information designed on the page. 
-- The work section was created using CSS grids. The top application box is larger than the four applications below. User currently does not have any application or projects so the boxes do not lead to anything.
+- The work section was created using CSS grids. The top application box is larger than the four applications below. User currently does not have any application or projects so the boxes do not lead to anything. The applications have the hover CSS property to add some more flair to the cards.
+- The Git Hub Profile link leads user to author's git hub profile.
 - The page is responsive with breakpoints of 1000ps, 768px and 576px.
 
 - The CSS was created to flow with the HTML and is clean and concise. 
@@ -35,7 +36,7 @@
 
 - Below are images of the completed HTML and CSS code.
 
-<img src="./assets//HTML-complete.png" alt="HTML-complete" width="300" height="auto"> <img src="./assets/CSS-complete.png" alt="CSS Complete" width="300" height="auto">
+<img src="./assets/CSS-complete.png" alt="CSS Complete" width="300" height="auto"><img src="./assets//HTML-complete.png" alt="HTML-complete" width="300" height="auto"> 
 
 ## Installation
 

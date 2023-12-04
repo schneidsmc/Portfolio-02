@@ -105,7 +105,7 @@ div img{
 section{
     display: flex;
 }
-/* Left column titles */
+/* Left/rightcolumn titles */
 h3{
     position: relative;
     border-style: solid;
@@ -117,6 +117,17 @@ h3{
     font-size: 50px;
     margin: 0px;
 }
+
+.column {
+    padding: 10px;
+  }
+  .left {
+    width: 25%;
+  }
+  .right {
+    width: 75%;
+  }
+
 /* right hand paragraphs */
 
 .about-me-p{
@@ -138,17 +149,6 @@ section ul li{
         align-items: center;
         flex-wrap: wrap;
 }
-
-/* These are the classes and ids */
-.column {
-    padding: 10px;
-  }
-  .left {
-    width: 25%;
-  }
-  .right {
-    width: 75%;
-  }
 
 /* CSS Grid properties */
 
