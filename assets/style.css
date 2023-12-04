@@ -174,10 +174,10 @@ section ul li{
 .grid-container{
     display: grid;
     width: 100%;
-    height: auto;
+    height: 65%;
     margin: 60px auto;
     grid-template-columns: 25%;
-    grid-template-rows: 25% 15% 15% 0%;
+    grid-template-rows: 500px 300px 300px;
 }
 
 .grid-card-properties{
@@ -216,16 +216,16 @@ section ul li{
     font-size: 30px;
 }
 .top-work-box p{
-    display: flex;
+    display: relative;
     font-size: 20px;
 }
 .work-box p{
-    display: flex;
+    display: relative;
     font-size: 20px;
 }
 .grid-item{
     position: relative;
-    overflow:hidden;
+    overflow: hidden;
 }
 .grid-item img{
     width: 100%;
@@ -260,6 +260,7 @@ section ul li{
 @media screen and (max-width: 1000px) {
     h1 {
       font-size:35px;
+      padding-left: 65px;
     }
     h3{
         font-size: 25px;
@@ -283,14 +284,34 @@ section ul li{
 }  
 
 @media screen and (max-width: 768px) {
+    h1{
+        font-size: 22px;
+        padding-right: 2px;
+        padding-left: 25px;
+    }
+    
     header nav ul li a {
-        display:flex;
+        display: flex;
         flex-direction: column;
         font-size: 15px;
-      
+        margin-left: 10px;
+        margin-top: 10px;
+        padding-top: 10px;
     }
+    section card div p {
+        display: none;
+    }
+    .about-me-p{
+        font-size: 20px;
+    }
+
 }
 @media screen and (max-width: 576px) {
+    h1{
+        font-size: 20px;
+        padding-left: 25px;
+    }
+    
     section card div p {
         display: none;
     }
