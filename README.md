@@ -36,7 +36,7 @@
 
 - Below are images of the completed HTML and CSS code.
 
-<img src="./assets/CSS-complete.png" alt="CSS Complete" width="300" height="auto"><img src="./assets//HTML-complete.png" alt="HTML-complete" width="300" height="auto"> 
+<img src="./assets/CSScomplete.png" alt="CSS Complete" width="300" height="auto"><img src="./assets//HTML-complete.png" alt="HTML-complete" width="300" height="auto"> 
 
 ## Installation
 
