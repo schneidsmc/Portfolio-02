@@ -25,7 +25,7 @@
             THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Description
-- Header with name and links to the information needed to contact. No current photo of applicant. 
+- Header with name, photo and links to the information needed to contact.
 - Navigation bar links lead to the information designed on the page. 
 - The work section was created using CSS grids. The top application box is larger than the four applications below. User currently does not have any application or projects so the boxes do not lead to anything.
 - The page is responsive with breakpoints of 1000ps, 768px and 576px.
