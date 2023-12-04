@@ -1,20 +1,16 @@
 :root{
     --jet: #312f2f;
-    --BrightTiffany: #84DCCF;
     --Uranian: #a6d9f7;
     --Dull: #bccce0;
     --Rosy: #bf98A0;
     --delft: #1d3461; 
     --mint: #09BC8A;
-    --LightG: #61e786;
 }
-
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--delft);
@@ -22,7 +18,6 @@ body{
     width: 100%;
     padding-bottom: 50px;
 }
-
 header{
     display:flex;
     justify-content: space-between;
@@ -30,10 +25,10 @@ header{
     background-color: var(--jet);
 }
 
+/* Nav bar items */
 header nav ul li{
     display: inline-flex;
 }
-
 header nav ul li a {
     margin-left: 5px;
     font-size: 20px;
@@ -43,14 +38,11 @@ header nav ul li a {
     padding: 10px;
     padding-top: 45px;
 }
-
+/* Name at top left*/
 h1{
     background-color: var(--Dull);
     color:var(--delft);
-    padding-left: 100px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 10px 5px 100px;
     background-size: fill;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -59,6 +51,7 @@ h1{
     border-style: dashed;
     border-left: 0px;
 }
+/* Image and cool subtitle */
 div{
     position:relative;
 }
@@ -69,7 +62,6 @@ div img{
     height: 370px;
     display: block;
     object-fit: cover;
-    flex: 2 1 200px;
 }
 .Tundra{
     position: absolute;
@@ -80,10 +72,7 @@ div img{
     border-color: var(--mint);
     border-right: 0px;
     color:var(--delft);
-    padding-right: 55px;
-    padding-left: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 55px 5px 10px;
     background-size: fill;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -92,11 +81,10 @@ div img{
 main{
     flex-wrap: nowrap;
 }
-
 section{
     display: flex;
 }
-
+/* Left column titles */
 h3{
     border-style: solid;
     border-width: 5px;
@@ -107,13 +95,13 @@ h3{
     font-size: 50px;
     margin: 0px;
 }
-
+/* right hand paragraphs */
 p{
     color: var(--delft);
     font-size: small;
     padding: 10px;
 }
-
+/* Contact me list at the bottom */
 section ul li{
         display: inline-flex;
         margin-left: 25px;
@@ -126,8 +114,6 @@ section ul li{
 }
 
 /* These are the classes and ids */
-
-
 .column {
     padding: 10px;
   }
@@ -140,8 +126,7 @@ section ul li{
     width: 75%;
   }
 
-
-
+/* CSS Grid properties */
 #grid-area-work{
     grid-area: 1 / 1 / 4 / 2;
     padding: 10px;
@@ -161,7 +146,6 @@ section ul li{
 #grid-area-autumn{
     grid-area: 3 / 3 / 3 / 3
 }
-
 .grid-container{
     display: grid;
     width: 100%;
@@ -169,7 +153,6 @@ section ul li{
     margin: 60px auto;
     grid-template: 25% 15% 15% / 25% 5fr 5fr;
 }
-
 .grid-card-properties{
     display: flex;
     /* flex: 1; */
@@ -182,7 +165,6 @@ section ul li{
     color:var(--delft);
     margin: 20px;
 }
-
 .top-work-box{
     position: absolute;
     display: flex;
@@ -195,7 +177,6 @@ section ul li{
     background-color: var(--mint);
     font-size: 30px;
 }
-
 .work-box{
     position: absolute;
     display: flex;
@@ -208,27 +189,23 @@ section ul li{
     background-color: var(--mint);
     font-size: 30px;
 }
-
 .grid-item{
     position: relative;
     overflow:hidden;
 }
-
-
 .grid-item img{
     width: 100%;
     height: auto;
     display:block;
     opacity: 50%;
 }
-
 .grid-item img:hover {
     opacity: 100%;
     background-color:var(--Rosy);
     cursor: pointer;
     transition: ease-in-out 0.5s;
 }
-
+/* Contact me properties */
 .contact-me {
     display: flex;
     flex-wrap: wrap;
@@ -240,13 +217,12 @@ section ul li{
     text-decoration:underline;
     text-underline-offset: 10px;
 }
-
 .contact-me a{
     color:var(--delft);
     text-decoration:underline;
     text-underline-offset: 10px;
 }
-
+/* Media Queries */
 @media screen and (max-width: 1000px) {
     h1 {
       font-size:35px;
