@@ -31,7 +31,7 @@
 - The Git Hub Profile link leads user to author's git hub profile.
 - The page is responsive with breakpoints of 1000ps, 768px and 576px.
 
-- The CSS was created to flow with the HTML and is clean and concise. 
+- The CSS was created to flow with the HTML and is clean and concise. There is likely a lot of progress to be made to write cleaner code but it's a start. 
 - The HTML was writted with clear semantics and heirarchy. 
 
 - Below are images of the completed HTML and CSS code.
